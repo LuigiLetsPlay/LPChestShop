@@ -1,0 +1,56 @@
+prefix: "&aLPChestShop &7»&r "
+
+help:
+  lines:
+    - "&f/lpcs create <amount> <price> &7- Create a shop (look at a chest, item in hand)"
+    - "&f/lpcs info &7- Info about the shop you're looking at"
+    - "&f/lpcs remove &7- Remove the shop you're looking at (admin/owner)"
+    - "&f/lpcs reload &7- Reload configs (admin)"
+
+errors:
+  no-permission: "&cYou don't have permission."
+  player-only: "&cThis command can only be used by players."
+  not-looking-at-chest: "&cLook at a chest within {distance} blocks."
+  chest-not-empty: "&cThe chest must be empty to create a shop."
+  need-item-in-hand: "&cYou must hold the shop item in your main hand."
+  invalid-format: "&cInvalid format. Use: &f/lpcs create <amount> <price>&c. Example: &f/lpcs create 16 20k"
+  sign-blocked: "&cCan't place the shop sign in front of the chest."
+  economy-missing: "&cEconomy not available. Install Vault + an economy plugin."
+  out-of-stock: "&cOut of stock."
+  not-enough-money: "&cYou don't have enough money."
+  buy-failed: "&cPurchase failed. You were not charged."
+  cannot-buy-own: "&cYou can't buy from your own shop."
+  shop-chest-protected: "&cYou cannot break a shop chest. &7To remove the shop, break the &fsign &7twice with an &faxe&7."
+
+create:
+  started:
+    - "&aType the deal in chat within &f{seconds}s&a:"
+    - "&f<amount> <price> &7(e.g. &f16 20k&7, &f32 1.5m&7)"
+    - "&7Type &fcancel &7to abort."
+  cancelled: "&cCreation cancelled."
+  timeout: "&cCreation timed out."
+  created: "&aShop created!"
+
+details:
+  opened: "&7Opened shop details."
+
+buy:
+  success: "&aPurchased &f{amount}x {item}&a for &f{price}&a."
+
+remove:
+  need-axe: "&cYou must use an axe to remove a shop sign."
+  not-owner: "&cYou can't remove this shop."
+  confirm: "&eBreak the sign again within {seconds}s to confirm removal."
+  removed: "&aShop removed."
+  hint: "&7To remove a shop: break the &fsign&7 twice with an &faxe&7."
+
+deposit:
+  not-allowed: "&cYou can only deposit the exact shop item (same meta/enchants)."
+
+info:
+  header: "&aShop Info"
+  lines:
+    - "&7Owner: &f{owner}"
+    - "&7Item: &f{item}"
+    - "&7Deal: &f{amount} for {price}"
+    - "&7Stock: &f{stock}"

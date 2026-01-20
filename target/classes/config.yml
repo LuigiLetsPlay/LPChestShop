@@ -1,0 +1,156 @@
+settings:
+  create:
+    max-target-distance: 5
+    require-empty-chest: true
+
+    # By default everyone can create shops.
+    # If true, players MUST have lpchestshop.create.
+    permission-required: false
+
+    # -1 = unlimited
+    max-shops-per-player: -1
+
+    # If player runs /lpcs create without args, they can type amount+price in chat.
+    chat-fallback-enabled: true
+    chat-timeout-seconds: 30
+
+    # Optional: enable GUI based creation (not required if you prefer command-only).
+    use-create-gui: false
+
+  economy:
+    # If true: buying requires Vault + an economy plugin.
+    require-vault: true
+
+    # Allow shop owner to buy from their own shop.
+    allow-owner-buy: false
+
+    # Display formatting for signs/chat
+    display:
+      short: true        # 20000 -> 20k
+      decimals: 1        # 1.5m
+      thousand-suffix: "k"
+      million-suffix: "m"
+
+  stock:
+    show-on-sign: true
+    out-of-stock-text: "Out"
+    show-when-zero: true       # if false: show "Out" when 0
+    count-exact-meta: true     # stock counts only items that are isSimilar()
+
+  protection:
+    prevent-break-shop-chest: true
+    prevent-open-shop-chest: true
+
+  removal:
+    require-axe: true
+    confirm-seconds: 8
+    double-confirm: true
+
+gui:
+  global:
+    cancel-clicks: true
+
+  create:
+    enabled: true
+    title: "&aCreate Chest Shop"
+    size: 27
+
+    # Slot that shows the item preview (optional)
+    preview-slot: 13
+
+    background:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+      lore: []
+      custom-model-data: 0
+      glow: false
+
+    confirm:
+      slot: 15
+      item:
+        material: LIME_WOOL
+        name: "&aConfirm"
+        lore:
+          - "&7Continue to price input."
+          - "&7Use: &f<amount> <price>"
+          - "&7Example: &f16 20k"
+        custom-model-data: 0
+        glow: true
+
+    cancel:
+      slot: 11
+      item:
+        material: RED_WOOL
+        name: "&cCancel"
+        lore:
+          - "&7Abort shop creation."
+        custom-model-data: 0
+        glow: false
+
+    info:
+      slot: 22
+      item:
+        material: PAPER
+        name: "&eHow it works"
+        lore:
+          - "&7Hold the item in your main hand."
+          - "&7Command: &f/lpcs create <amount> <price>"
+          - "&7Example: &f/lpcs create 16 20k"
+          - "&7You can also type &f16 20k &7in chat"
+          - "&7if you used &f/lpcs create &7without args."
+        custom-model-data: 0
+        glow: false
+
+    # Optional: extra decorative items
+    extras:
+      enabled: false
+      items: []
+
+  details:
+    enabled: true
+    title: "&aShop: &f{item}"
+    size: 27
+
+    background:
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+      lore: []
+      custom-model-data: 0
+      glow: false
+
+    item-slot: 13
+
+    hint:
+      enabled: true
+      slot: 22
+      item:
+        material: EMERALD
+        name: "&aBuy"
+        lore:
+          - "&7Right-click the sign to buy."
+        custom-model-data: 0
+        glow: true
+
+    stats:
+      enabled: true
+      slot: 21
+      item:
+        material: BOOK
+        name: "&eShop Info"
+        lore:
+          - "&7Amount: &f{amount}"
+          - "&7Price: &f{price}"
+          - "&7Stock: &f{stock}"
+        custom-model-data: 0
+        glow: false
+
+sign:
+  # Placeholders: {item} {amount} {price} {stock}
+  lines:
+    - "&a[EzShop]"
+    - "&f{item} &7x{amount}"
+    - "&e{price}"
+    - "&7Stock: &f{stock}"
+
+  auto-update: true
+  use-short-money: true

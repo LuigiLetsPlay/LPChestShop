@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop.util;
+package org.luigilp.lPChestShop.util;
 
 public final class MoneyParser {
 

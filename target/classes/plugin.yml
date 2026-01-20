@@ -1,0 +1,28 @@
+name: LPChestShop
+version: '1.0-SNAPSHOT'
+main: org.luigilp.lpchestshop.LPChestShop
+api-version: '1.20'
+softdepend: [Vault]
+
+commands:
+  lpchestshop:
+    description: Main command for LPChestShop.
+    usage: /lpchestshop <create|reload|remove|info|help>
+    aliases: [lpcs]
+
+permissions:
+  lpchestshop.create:
+    description: Allows creating shops.
+    default: true
+  lpchestshop.reload:
+    description: Allows reloading config/messages.
+    default: op
+  lpchestshop.remove.own:
+    description: Allows removing your own shop (via breaking sign twice with axe).
+    default: true
+  lpchestshop.remove.any:
+    description: Allows removing any shop.
+    default: op
+  lpchestshop.bypass:
+    description: Bypass restrictions (open any shop chest, deposit anything).
+    default: op

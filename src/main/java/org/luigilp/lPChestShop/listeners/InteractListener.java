@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop.listeners;
+package org.luigilp.lPChestShop.listeners;
 
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -9,8 +9,8 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
-import org.luigilp.lpchestshop.LPChestShop;
-import org.luigilp.lpchestshop.model.Shop;
+import org.luigilp.lPChestShop.LPChestShop;
+import org.luigilp.lPChestShop.model.Shop;
 
 public final class InteractListener implements Listener {
 

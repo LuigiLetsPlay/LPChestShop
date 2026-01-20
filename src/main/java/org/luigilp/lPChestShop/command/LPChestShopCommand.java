@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop.command;
+package org.luigilp.lPChestShop.command;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -6,11 +6,11 @@ import org.bukkit.block.Block;
 import org.bukkit.command.*;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.luigilp.lpchestshop.LPChestShop;
-import org.luigilp.lpchestshop.model.Shop;
-import org.luigilp.lpchestshop.session.CreateSession;
-import org.luigilp.lpchestshop.util.ItemUtils;
-import org.luigilp.lpchestshop.util.MoneyParser;
+import org.luigilp.lPChestShop.LPChestShop;
+import org.luigilp.lPChestShop.model.Shop;
+import org.luigilp.lPChestShop.session.CreateSession;
+import org.luigilp.lPChestShop.util.ItemUtils;
+import org.luigilp.lPChestShop.util.MoneyParser;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop.util;
+package org.luigilp.lPChestShop.util;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;

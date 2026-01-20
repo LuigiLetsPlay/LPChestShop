@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop;
+package org.luigilp.lPChestShop;
 
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
@@ -7,15 +7,15 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.luigilp.lpchestshop.command.LPChestShopCommand;
-import org.luigilp.lpchestshop.gui.GuiFactory;
-import org.luigilp.lpchestshop.listeners.*;
-import org.luigilp.lpchestshop.model.Shop;
-import org.luigilp.lpchestshop.session.SessionManager;
-import org.luigilp.lpchestshop.shop.ShopManager;
-import org.luigilp.lpchestshop.util.GitHubReleaseUpdateChecker;
-import org.luigilp.lpchestshop.util.Messages;
-import org.luigilp.lpchestshop.util.Text;
+import org.luigilp.lPChestShop.command.LPChestShopCommand;
+import org.luigilp.lPChestShop.gui.GuiFactory;
+import org.luigilp.lPChestShop.listeners.*;
+import org.luigilp.lPChestShop.model.Shop;
+import org.luigilp.lPChestShop.session.SessionManager;
+import org.luigilp.lPChestShop.shop.ShopManager;
+import org.luigilp.lPChestShop.util.GitHubReleaseUpdateChecker;
+import org.luigilp.lPChestShop.util.Messages;
+import org.luigilp.lPChestShop.util.Text;
 
 import java.util.List;
 import java.util.Map;

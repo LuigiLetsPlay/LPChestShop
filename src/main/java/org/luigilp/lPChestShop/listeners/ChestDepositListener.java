@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop.listeners;
+package org.luigilp.lPChestShop.listeners;
 
 import org.bukkit.Location;
 import org.bukkit.block.Block;
@@ -11,9 +11,9 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.luigilp.lpchestshop.LPChestShop;
-import org.luigilp.lpchestshop.model.Shop;
-import org.luigilp.lpchestshop.util.ItemUtils;
+import org.luigilp.lPChestShop.LPChestShop;
+import org.luigilp.lPChestShop.model.Shop;
+import org.luigilp.lPChestShop.util.ItemUtils;
 
 public final class ChestDepositListener implements Listener {
 

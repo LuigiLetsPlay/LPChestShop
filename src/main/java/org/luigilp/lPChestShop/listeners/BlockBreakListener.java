@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop.listeners;
+package org.luigilp.lPChestShop.listeners;
 
 import org.bukkit.Material;
 import org.bukkit.Tag;
@@ -9,8 +9,8 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
-import org.luigilp.lpchestshop.LPChestShop;
-import org.luigilp.lpchestshop.model.Shop;
+import org.luigilp.lPChestShop.LPChestShop;
+import org.luigilp.lPChestShop.model.Shop;
 
 import java.util.HashMap;
 import java.util.Map;

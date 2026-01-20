@@ -1,4 +1,4 @@
-package org.luigilp.lpchestshop.shop;
+package org.luigilp.lPChestShop.shop;
 
 import net.kyori.adventure.text.Component;
 import org.bukkit.*;
@@ -11,10 +11,10 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.block.data.type.Chest;
 import org.bukkit.block.data.type.WallSign;
-import org.luigilp.lpchestshop.LPChestShop;
-import org.luigilp.lpchestshop.model.Shop;
-import org.luigilp.lpchestshop.util.ItemUtils;
-import org.luigilp.lpchestshop.util.Text;
+import org.luigilp.lPChestShop.LPChestShop;
+import org.luigilp.lPChestShop.model.Shop;
+import org.luigilp.lPChestShop.util.ItemUtils;
+import org.luigilp.lPChestShop.util.Text;
 
 import java.io.File;
 import java.io.IOException;
