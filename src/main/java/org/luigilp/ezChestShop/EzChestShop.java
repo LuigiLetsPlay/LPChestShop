@@ -103,10 +103,6 @@ public final class EzChestShop extends JavaPlugin {
         return economy != null;
     }
 
-    public Economy getEconomy() {
-        return economy;
-    }
-
     public Messages getMessages() {
         return messages;
     }
@@ -117,10 +113,6 @@ public final class EzChestShop extends JavaPlugin {
 
     public ShopManager getShopManager() {
         return shopManager;
-    }
-
-    public GuiFactory getGuiFactory() {
-        return guiFactory;
     }
 
     public void openDetails(Player player, Shop shop) {
