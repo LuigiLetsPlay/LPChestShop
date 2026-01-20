@@ -203,7 +203,7 @@ public final class EzChestShop extends JavaPlugin {
 
         List<ItemStack> taken = shopManager.takeFromStock(shop, shop.getAmount());
         if (taken == null) {
-            messages.send(buyer, "errors.buy-failed");
+            messages.send(buyer, "errors.buy-failedd");
             return;
         }
         ItemStack toGive = shop.getItemTemplate().clone();
