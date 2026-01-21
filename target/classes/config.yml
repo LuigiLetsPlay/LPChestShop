@@ -3,39 +3,29 @@ settings:
     max-target-distance: 5
     require-empty-chest: true
 
-    # By default everyone can create shops.
-    # If true, players MUST have lpchestshop.create.
     permission-required: false
 
-    # -1 = unlimited
     max-shops-per-player: -1
 
-    # If player runs /lpcs create without args, they can type amount+price in chat.
     chat-fallback-enabled: true
     chat-timeout-seconds: 30
 
-    # Optional: enable GUI based creation (not required if you prefer command-only).
     use-create-gui: false
 
   economy:
-    # If true: buying requires Vault + an economy plugin.
     require-vault: true
-
-    # Allow shop owner to buy from their own shop.
     allow-owner-buy: false
-
-    # Display formatting for signs/chat
     display:
-      short: true        # 20000 -> 20k
-      decimals: 1        # 1.5m
+      short: true
+      decimals: 1
       thousand-suffix: "k"
       million-suffix: "m"
 
   stock:
     show-on-sign: true
     out-of-stock-text: "Out"
-    show-when-zero: true       # if false: show "Out" when 0
-    count-exact-meta: true     # stock counts only items that are isSimilar()
+    show-when-zero: true
+    count-exact-meta: true
 
   protection:
     prevent-break-shop-chest: true
@@ -55,7 +45,6 @@ gui:
     title: "&aCreate Chest Shop"
     size: 27
 
-    # Slot that shows the item preview (optional)
     preview-slot: 13
 
     background:
@@ -101,7 +90,6 @@ gui:
         custom-model-data: 0
         glow: false
 
-    # Optional: extra decorative items
     extras:
       enabled: false
       items: []
@@ -145,9 +133,8 @@ gui:
         glow: false
 
 sign:
-  # Placeholders: {item} {amount} {price} {stock}
   lines:
-    - "&a[EzShop]"
+    - "&a[LPShop]"
     - "&f{item} &7x{amount}"
     - "&e{price}"
     - "&7Stock: &f{stock}"

@@ -1,5 +1,5 @@
 name: LPChestShop
-version: '1.0.2'
+version: '1.0.3'
 main: org.luigilp.lPChestShop.LPChestShop
 api-version: '1.20'
 softdepend: [Vault]
