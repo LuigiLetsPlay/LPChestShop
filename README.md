@@ -39,7 +39,7 @@ A lightweight, user-friendly chest shop plugin for Paper 1.20+ that lets players
 Required (for economy features):
 - [**Vault**](https://www.spigotmc.org/resources/vault.34315/)
 - **An economy plugin** (Vault-compatible), e.g.:
-  - **EssentialsX Economy** (recommended)
+  - [**EssentialsX Economy**](https://essentialsx.net/) (recommended)
 
 Notes:
 - LPChestShop will run without Vault, but economy-related features will be unavailable until Vault + an economy plugin are installed.
