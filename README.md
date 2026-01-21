@@ -33,7 +33,16 @@ A lightweight, user-friendly chest shop plugin for Paper 1.20+ that lets players
 
 - **Paper** 1.20+ (recommended: 1.20.4+)
 - **Java** 17+
-- **Vault** (soft-depend) + an economy plugin (e.g., EssentialsX Economy)
+
+## 🔗 Dependencies
+
+Required (for economy features):
+- **Vault**
+- **An economy plugin** (Vault-compatible), e.g.:
+  - **EssentialsX Economy** (recommended)
+
+Notes:
+- LPChestShop will run without Vault, but economy-related features will be unavailable until Vault + an economy plugin are installed.
 
 ## 🚀 Commands
 
